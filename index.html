@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        border: 1px solid black;
+        width: 70%;
+        max-width: 500px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: table;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 8px;
+        border: 1px solid black;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      .save-button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+
+      .save-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td><span class="bold-text">First Name:</span></td>
+          <td>
+            <input type="text" id="firstName" name="firstName" required />
+          </td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">Last Name:</span></td>
+          <td><input type="text" id="lastName" name="lastName" required /></td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">Email:</span></td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">Gender:</span></td>
+          <td>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              required
+            /><span class="bold-text">Male</span>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            /><span class="bold-text">Female</span>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">Age:</span></td>
+          <td><input type="number" id="age" name="age" required /></td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">Phone Number:</span></td>
+          <td>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+          </td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">Address:</span></td>
+          <td><input type="text" id="address" name="address" required /></td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">State:</span></td>
+          <td><input type="text" id="state" name="state" required /></td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">Country:</span></td>
+          <td>
+            <select id="country" name="country" required>
+              <option value="">Select Country</option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="bold-text">Languages Known:</span></td>
+          <td>
+            <input
+              type="checkbox"
+              id="english"
+              name="languages"
+              value="english"
+            /><span class="bold-text">English</span>
+            <input
+              type="checkbox"
+              id="kannada"
+              name="languages"
+              value="kannada"
+            /><span class="bold-text">Kannada</span>
+            <input
+              type="checkbox"
+              id="hindi"
+              name="languages"
+              value="hindi"
+            /><span class="bold-text">Hindi</span>
+            <input
+              type="checkbox"
+              id="telugu"
+              name="languages"
+              value="telugu"
+            /><span class="bold-text">Telugu</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="checkbox"
+              id="declaration"
+              name="declaration"
+              required
+            />
+            Hereby I declare that all the given details are true
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Register" class="save-button" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <a href="https://www.ethnus.com">Login to Ethnus Website</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
